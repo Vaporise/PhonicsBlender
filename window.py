@@ -17,9 +17,11 @@ class DragDropApp:
         phonics_lines = tk.LabelFrame(self.window,text="Lines", pady=20)
         phonics_lines.pack(pady=20)
 
-        label_inside_phonics_lines = tk.Label(phonics_lines, text="This is inside", font=("Arial", 12))
+        label_inside_phonics_lines = tk.Label(phonics_lines, text="This is inside but does it get bigger with more text?", font=("Arial", 12))
         label_inside_phonics_lines.pack(pady=10)
 
+        button_for_lines = tk.Button(self.window, text="Select")
+        button_for_lines.pack(pady=10)
 
 def main():
     window = tk.Tk() # Creates the window
